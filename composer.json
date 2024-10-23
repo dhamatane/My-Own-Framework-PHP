@@ -1,0 +1,21 @@
+{
+    "name": "hamatane/demo",
+    "autoload": {
+        "psr-4": {
+            "Hamatane\\Demo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hamatane Diallo",
+            "email": "dhamatane@gmail.com"
+        }
+    ],
+    "require": {},
+    "autload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "Http\\": "Http/"
+        }
+    }
+}
