@@ -63,12 +63,15 @@ class Router
                     $middleware = Middleware::MAP[$route['middleware']];
 
                     (new $middleware)->handle();
-    
                 }
-    
+
                 return require base_path('Http/controllers/' . $route['controller']);
-                
             }
         }
+    }
+
+    function previousUrl()
+    {
+        return $_SERVER['HTTP_REFERER'];
     }
 }
